@@ -1,34 +1,19 @@
-\# Windows Intune MDM Enrollment Verification
+# Windows Intune MDM Enrollment Verification
 
+Manual enrollment of a Windows 11 VM into Microsoft Intune (MDM) and local verification using native Windows commands.
 
+## Summary
+Enrolled a Windows 11 VM using a work/school account.
+Verified MDM enrollment without relying on the Intune portal.
 
-Hands-on lab demonstrating manual enrollment of a Windows 11 VM into Microsoft Intune (MDM) and local verification using native Windows commands.
+## Validation performed
+dsregcmd enrollment state.
+Intune enrollment registry keys.
+MDM-related certificates.
+MDM scheduled tasks.
 
+## Notes
+This approach is useful when portal access is limited or when troubleshooting device-side enrollment issues.
 
-
-\## What was done
-
-\- Manually enrolled a Windows 11 VM using a work/school account
-
-\- Verified MDM enrollment without relying on the Intune portal
-
-
-
-\## How enrollment was validated
-
-\- dsregcmd enrollment status
-
-\- Intune enrollment registry keys
-
-\- MDM-related certificates
-
-\- MDM scheduled tasks
-
-
-
-\## Files
-
-\- intune\_device\_enrollment\_verification.ps1
-
-
-
+## Files
+intune_device_enrollment_verification.ps1
